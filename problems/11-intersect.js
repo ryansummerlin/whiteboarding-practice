@@ -19,6 +19,9 @@ const intersect = function(arr1, arr2) {
     return intersect;
 }
 
+// Time complexity is O(n^2) and I don't see a better way to optimize it. Space complexity is O(n).
+// Worst case scenario is all the the values intersect and space complexity is O(n).
+
 
 intersect(['a', 'b', 'c', 'd'], ['b', 'd', 'e']) // => [ 'b', 'd' ]
 intersect(['a', 'b', 'c'], ['x', 'y', 'z']) // => []

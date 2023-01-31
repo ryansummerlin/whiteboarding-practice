@@ -21,8 +21,11 @@ function isPrime(number) {
 // complexity for time complexity to create a cache outside of the function to store previously computed keys
 // but I'm not sure that's necessary given a O(n) time complexity.
 
-console.log(isPrime(2)); // true
-console.log(isPrime(10)); // false
-console.log(isPrime(11));// true
-console.log(isPrime(9)); // false;
-console.log(isPrime(2017)); // true
+// console.log(isPrime(2)); // true
+// console.log(isPrime(10)); // false
+// console.log(isPrime(11));// true
+// console.log(isPrime(9)); // false;
+// console.log(isPrime(2017)); // true
+
+
+module.exports = { isPrime };

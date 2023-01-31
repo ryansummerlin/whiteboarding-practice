@@ -11,6 +11,10 @@ function mirrorArray(array) {
     return array;
 }
 
+// This should be O(n) for both time and space complexity. You have to loop through the the length
+// of the orignal array and create n new memory slots in the array where n is the original length of
+// the array. I don't think you can optimize this any further.
+
 mirrorArray([1,2,3]);
   // => [ 1, 2, 3, 3, 2, 1 ]
 mirrorArray(['a', 'b', 'c', 'd']);

@@ -2,7 +2,7 @@
 // divisible by either 3 or 5, but not both.
 
 // First question would be if the max is inclusive or exclusive. For this problem I'm going to treat it as exclusive
-// based on the example given.
+// based on the example given (doesn't include 20).
 
 const fizzBuzz = function(max) {
     let fizz = [];
