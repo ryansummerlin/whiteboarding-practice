@@ -3,7 +3,24 @@
 
 // CONSTRAINT: Use only while loops. No for loops.
 
+const pairProduct = function(arr, num) {
+    let i = 0;
+    let j;
+    let pairs = [];
+    while (i < arr.length) {
+        j = i + 1;
+        while (j < arr.length) {
+            if ((arr[i] * arr[j]) === num) {
+                pairs.push([i, j]);
+            }
+            j++;
+        }
+        i++;
+    }
 
+    console.log(pairs);
+    return pairs;
+}
 
 
 

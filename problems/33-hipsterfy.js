@@ -1,6 +1,14 @@
 // Write a function hipsterfy(sentence) that takes takes a string containing several words as input. Remove the last vowel from each word. 'y' is not a vowel.
 
+const { hipsterfyWord } = require('./32-hipsterfyWord');
 
+function hipsterfy(sentence) {
+    let sentenceArr = sentence.split(' ');
+    let hipsterfied = sentenceArr.map(el => hipsterfyWord(el));
+
+    console.log(hipsterfied.join(' '));
+    return hipsterfied.join(' ');
+}
 
 
 

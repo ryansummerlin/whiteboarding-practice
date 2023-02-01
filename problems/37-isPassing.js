@@ -1,7 +1,23 @@
 // Write a function isPassing(assessments) that takes in an array of assessment objects.
 // The function should return true if the average assessment score is at least 70. It should return false otherwise.
 
+const isPassing = function(assessments) {
+    let total = 0;
+    assessments.forEach(el => total += el.score);
+    let average = total/assessments.length;
 
+    if (average >= 70) {
+        console.log(true);
+        return true;
+    } else {
+        console.log(false);
+        return false;
+    }
+}
+
+
+// This should be time complexity O(n). You have to cycle through each object in the array to grab
+// the score and add it to the total. I don't think there's any way to optimize it further.
 
 
 const assessments1 = [

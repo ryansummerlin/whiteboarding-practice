@@ -2,7 +2,17 @@
 // should return the total number of elements in the 2D-array.
 
 
+function twoDimensionalSize(array) {
+    let size = 0;
+    array.forEach(el => size += el.length);
 
+    console.log(size);
+    return size;
+}
+
+// This should be time complexity O(n). You have to loop through all of the array elements
+// but grabbing the length of each array should be an O(1) operation. I don't think there's any way
+// to optimize this further.
 
 
 

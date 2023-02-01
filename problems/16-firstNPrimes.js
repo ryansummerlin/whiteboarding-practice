@@ -36,6 +36,10 @@ function isPrimeCache(n) {
 // This cuts down time complexity to O(n) on any subsequent runs with n less than what has been calulated previously. I don't
 // think this can be optimized any further.
 
-firstNPrimes(0);  // => []
-firstNPrimes(1);  // => [2]
-firstNPrimes(4);  // => [2, 3, 5, 7]
+// firstNPrimes(0);  // => []
+// firstNPrimes(1);  // => [2]
+// firstNPrimes(4);  // => [2, 3, 5, 7]
+
+
+
+module.exports = { isPrimeCache };
